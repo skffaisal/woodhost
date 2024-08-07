@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Furniture Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'AppleFont';
+            src: url('https://path-to-apple-font/AppleFont.ttf') format('truetype');
+        }
+        .apple-style {
+            font-family: 'AppleFont', sans-serif;
+            font-size: 5rem;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
 </head>
-<body>
-    <h1>NK is great</h1>
+<body class="bg-gray-100">
+ 
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="#" class="text-gray-800 text-xl font-bold md:text-2xl">Furniture Store</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="#" class="text-gray-800 text-sm mx-2 md:text-md">Home</a>
+                    <a href="#" class="text-gray-800 text-sm mx-2 md:text-md">Shop</a>
+                    <a href="#" class="text-gray-800 text-sm mx-2 md:text-md">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+ 
+    <!-- Main Content -->
+    <main class="my-8">
+        <div class="container mx-auto px-6">
+            <!-- Featured Section -->
+            <div class="h-64 rounded-md overflow-hidden bg-cover bg-center" style="background-image: url('https://example.com/furniture-image.jpg')">
+                <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
+                    <div class="px-10 max-w-xl">
+                        <h2 class="text-2xl text-white font-bold">Best Furniture for Your Home</h2>
+                        <p class="mt-2 text-white">Discover our wide range of furniture that suits your style and budget.</p>
+                        <a href="#" class="block mt-4 py-2 px-4 bg-yellow-500 text-white text-center font-bold rounded">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Product Section -->
+            <div class="mt-16">
+                <h3 class="text-gray-800 text-2xl font-medium">Our Products</h3>
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Product Card -->
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <div class="bg-cover bg-center h-56" style="background-image: url('https://example.com/product1.jpg')"></div>
+                        <div class="p-4">
+                            <h3 class="text-gray-800 text-lg font-semibold">Product Name</h3>
+                            <p class="text-gray-600">$199.99</p>
+                            <button class="mt-4 w-full bg-yellow-500 text-white py-2 px-4 rounded">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Repeat similar blocks for more products -->
+                </div>
+            </div>
+        </div>
+    </main>
+ 
+    <!-- Footer -->
+    <footer class="bg-white shadow mt-8">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <p class="text-gray-600">© 2024 Furniture Store. All rights reserved.</p>
+                <div>
+                    <a href="#" class="text-gray-600 mx-2">Privacy Policy</a>
+                    <a href="#" class="text-gray-600 mx-2">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+    <!-- NK IS GREAT text -->
+    <div class="container mx-auto px-6 py-16 text-center">
+        <div class="apple-style">NK IS GREAT</div>
+    </div>
+ 
 </body>
 </html>
